@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to the main css -->
+    <link rel="stylesheet" href="./stylesheet/main.css">
+    <!-- link to css reset  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <!-- link to all the fonts  -->
+    <link rel="stylesheet" href="https://use.typekit.net/fmq5blq.css">
+    <!-- title pf the page -->
+    <title>Awesome Fake Forms</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation-bar">
+
+                <li class="logo-container"><a href="#">
+                        <figure id="logo">
+
+                            <img class="logo-png" alt="page logo" src="./assests/logo.png">
+                        </figure>
+                </li></a>
+
+
+                <li id="home"><a class="nav-link" href="#">
+                        Home
+                    </a></li>
+
+
+
+                <li id="about-me"><a class="nav-link" href="#">
+                        About Me
+                    </a></li>
+
+
+
+                <li id="contact-me"><a class="nav-link" href="#contact-me-not">
+                        Contact Us
+                    </a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <!-- <section class="Heading"> -->
+            <h1 class="sign-up-h1">Sign up</h1>
+            <h3 class="log-in">Already have an account ? <span><a href="log-in">Log-In here.</a></span></h3>
+
+            <form method='post' action="/">
+                <fieldset class="personal-info">
+                    <legend>
+                        Personal Information
+                    </legend>
+                    <!-- first name input feild  -->
+                    <section class="fname">
+                        <label for="fname">First Name : </label>
+                        <input type="text" id="fname" name="fname">
+                    </section>
+
+                    <!-- last name inout feild  -->
+                    <section class="lname">
+                        <label for="lname">Last Name :</label>
+                        <input type="text" id="lname" name="lname">
+                    </section>
+
+                    <!-- address input feild  -->
+                    <section class="address">
+                        <label for="H-address">Home Address :</label>
+                        <input type="text" id="H-address" name="H-address" size="50">
+                    </section>
+
+
+                    <!-- country input  -->
+                    <section>
+                        <ol class="location">
+                            <li class="row-1">
+                                <label for="Country">Country</label>
+                                <select name="Country" id="Country">
+                                    <option value="Select" disabled selected>
+                                        Select
+                                    </option>
+                                    <option value="Canada">
+                                        Canada
+                                    </option>
+                                    <option value="Not-Canada">
+                                        Not Canada
+                                    </option>
+                                </select>
+                            </li>
+                            <li class="row-1">
+                                <!-- province input -->
+                                <label for="Province">Province</label>
+                                <select name="Province" id="Province">
+                                    <option value="Select" disabled selected>
+                                        Select
+                                    </option>
+                                    <option value="Alberta">
+                                        Alberta
+                                    </option>
+                                    <option value="British-Columbia">
+                                        British Columbia
+                                    </option>
+                                    <option value="Manitoba">Manitoba</option>
+
+                                    <option value="New-Brunswick">New Brunswick</option>
+
+                                    <option value="NL">Newfoundland and Labrador</option>
+
+                                    <option value="Nova-Scotia">Nova Scotia</option>
+
+                                    <option value="Ontario">Ontario</option>
+                                    <option value="PEI">Prince Edward Island</option>
+
+                                    <option value="Quebec">Quebec</option>
+
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                    <option value="Other">Other Non-Canadian</option>
+
+                                </select>
+                            </li>
+                            <li class="row-2">
+                                <!-- city input -->
+
+                                <label for="city">City</label>
+                                <!-- wanted to try search type for this one -->
+                                <input type="search" id="city" list="city-choice" name="city" autocomplete="off">
+                                <datalist>
+                                    <option value="Toronto">
+                                        Toronto
+                                    </option>
+                                    <option value="Not-toronto">
+                                        Other
+                                    </option>
+                                </datalist>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="tel-no">
+                        <!-- contact number input -->
+                        <label for="conatct-no">Conatct Number :</label>
+                        <input type="tel" id="country-code" name="country-code" maxlength="2" size="3">
+                        <p>-</p>
+                        <input type="tel" id="conatct-no" name="conatct-no" maxlength="10" size="12">
+                    </section>
+                    <!-- academic status -->
+                    <!-- didnt know if i should use feildset or h3 tag for heading tag -->
+                    <section class="academic-status">
+
+                        <h3>Academic status :</h3>
+
+                        <ul class="academic-list">
+                            <li>
+                                <input type="radio" id="Student" name="Academic" value="Student">
+                                <label for="Student">Student</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="Proffesor" name="Academic" value="Proffesor">
+                                <label for="Proffesor">Proffesor</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="Alumnus" name="Academic" value="Alumnus">
+                                <label for="Alumnus">Alumnus</label>
+                            </li>
+                        </ul>
+                    </section>
+                </fieldset>
+
+
+                <fieldset class="contact-info">
+
+                    <legend>
+                        Contact Information
+                    </legend>
+                    <h4>The feild marked with '<span class="mandatory-feilds">*</span>' are mandatory</h4>
+
+                    <!-- email input feild -->
+                    <section>
+                        <label for="email"><span class="mandatory-feilds">*</span>Email Id: </label>
+                        <input type="email" name="email" size="25" required>
+                    </section>
+                    <section>
+                        <!-- passwrod input feild -->
+                        <label for="password"><span class="mandatory-feilds">*</span>Password: </label>
+                        <input type="password" name="password" required size="25">
+                    </section>
+
+                </fieldset>
+                <!-- Connect with us -->
+                <fieldset class="connect">
+                    <legend>Conect with us</legend>
+                    <section>
+                        <input type="checkbox" id="Subscribe" name="Subscribe" value="Subscribe">
+                        <lable for="Subscribe">Suscribe with newsletter !</lable>
+                    </section>
+                    <section>
+                        <input type="checkbox" id="alerts" name="alerts" value="alerts">
+                        <lable for="alerts">Send me only alerts and notification.</lable>
+                    </section>
+
+                </fieldset>
+                <section>
+                    <input class="submit" type="submit" value="Submit">
+                </section>
+
+                <!-- <fieldset class="feedback">
+                    <legend>
+                        Help us improve! Drop in your feedback :)
+                    </legend>
+                    <lable for="feedback" name="feedback">What did you like about us?</lable>
+                    <textarea></textarea>
+                    <input type="submit" name="feedback" value="Submit">
+                </fieldset> -->
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="col-1">
+            <h3>
+                Fake Footer
+            </h3>
+            <ul class="link-list">
+                <li>
+                    <a href="#">
+
+                        Link
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="col-1">
+            <h3>
+                I lead nowhere
+            </h3>
+            <ul class="link-list">
+
+                <li><a href="#">
+                        Another link
+                    </a></li>
+
+
+                <li><a href="#">
+                        Another link
+                    </a></li>
+
+
+                <li><a href="#">
+                        Another brick in the wall
+                    </a></li>
+
+            </ul>
+        </section>
+        <section class="col-2">
+            <h3 id="contact-me-not">
+                Contact-me-not
+            </h3>
+            <address>
+                <p>
+                    <span>Authour : </span> Chiranjivi
+                </p>
+                <p>
+                    <span>Office address :</span> INM-220-BB,
+                    Web Dev Dungeon.
+                </p>
+                <p>
+                    <span>Mobile :</span> +1-023-456-7890
+                </p>
+            </address>
+
+        </section>
+
+    </footer>
+</body>
+
+</html>

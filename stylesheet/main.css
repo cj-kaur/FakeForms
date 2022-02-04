@@ -1,0 +1,243 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #b7c298;
+}
+
+/* anchor tag appearance reset  */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+header {
+	width: 100vw;
+	height: 15vh;
+	/* background-color: lavender; */
+}
+nav {
+	padding: auto 0;
+}
+.navigation-bar figure {
+	/* width: 13rem; */
+	width: 16vw;
+
+	/* background-color: lawngreen; */
+}
+.logo-container img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+.navigation-bar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo-container {
+	/* align-content: flex-start; */
+	margin-right: auto;
+}
+.navigation-bar li {
+	padding: 2vh 3vw;
+	/* pading all around  */
+
+	font-family: open-sans, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 1.25rem;
+	/* color: #467302; */
+	color: white;
+}
+.nav-link:hover {
+	/* border colour #467302 */
+	border-bottom: 2px solid white;
+}
+
+.form-container {
+	margin: 5vh auto 10vh;
+	width: 75vw;
+	background-color: whitesmoke;
+	border: 4px solid #a0af9c;
+	border-radius: 10px;
+	padding: 3rem 0 4rem;
+	/* font aethetics */
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	/* flex box */
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	/* drop shadow */
+	filter: drop-shadow(0.5rem 0.5rem 0.75rem #a0af9cc9);
+}
+
+.sign-up-h1 {
+	font-weight: 800;
+	font-size: 1.75rem;
+}
+.log-in {
+	font-weight: 300;
+	font-size: 0.95rem;
+	margin-top: 2%;
+}
+.log-in a {
+	font-weight: 700;
+	color: #467302;
+}
+.log-in a:hover {
+	text-decoration: underline;
+	/* border-bottom: 0.3rem solid #467302; */
+}
+
+fieldset legend {
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+fieldset label {
+	font-weight: 400;
+
+	font-size: 0.95rem;
+}
+fieldset input {
+	font-family: prestige-elite-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.95rem;
+	border: none;
+	border-bottom: 1px solid #467302;
+	border-radius: 3px 3px 0 0;
+	/* padding-left: 0.5rem; */
+	/* why is padding-left not working for input tag */
+}
+fieldset select {
+	font-family: prestige-elite-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.95rem;
+}
+.personal-info {
+	margin-top: 5.5%;
+	padding: 4% 0;
+	height: 47vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	border-bottom: 0.23rem dotted #467302;
+}
+.location {
+	/* margin-top: 3.3%; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.row-1 {
+	padding-right: 4rem;
+}
+.tel-no p {
+	display: inline;
+}
+.academic-status {
+	/* margin-top: 5.5%;
+	padding-bottom: 2%;
+	height: 12vh; */
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+
+	/* border-bottom: 0.23rem dotted #467302; */
+}
+.academic-list {
+	padding-left: 0.3rem;
+}
+.academic-list li {
+	display: inline;
+}
+.academic-list li:nth-child(2),
+.academic-list li:nth-child(3) {
+	padding-left: 1rem;
+}
+
+.contact-info {
+	margin-top: 6%;
+	height: 27vh;
+	padding-bottom: 4%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	border-bottom: 0.23rem dotted #467302;
+}
+.contact-info h4 {
+	font-weight: 300;
+	font-size: 0.95rem;
+	margin-top: 0.5rem;
+}
+.mandatory-feilds {
+	color: rgb(156, 36, 36);
+	font-weight: 500;
+}
+.connect {
+	margin-top: 6%;
+	height: 22vh;
+	padding-bottom: 4%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+}
+
+.submit {
+	padding: 1% 3%;
+	border-radius: 1.75rem;
+	border: solid #467302;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+#footer {
+	background-color: #d8d2c6;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/* height: 30vh; */
+	justify-content: space-evenly;
+	padding: 5% 0 7%;
+	/* Font styling */
+	font-family: open-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+}
+#footer .col-1 {
+	width: 25vh;
+}
+#footer .col-2 {
+	width: 40vh;
+}
+#footer h3 {
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+#footer address {
+	margin-top: 8.7%;
+}
+#footer .link-list {
+	margin-top: 13%;
+	/* display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly; */
+}
+
+.link-list li {
+	margin-bottom: 8%;
+}
+.link-list a:hover {
+	text-decoration: underline;
+}
+address p {
+	margin-bottom: 6%;
+}
